@@ -60,6 +60,23 @@ Then open Chrome and load the generated `dist` directory as an unpacked extensio
 4. Press Inspect page or trigger extraction from the popup.
 5. Copy the generated payload for AI-assisted reconstruction.
 
+## Demo page
+
+A local demo page is included for testing the capture workflow without needing an external site.
+
+```bash
+npm install
+npm run demo -- --host 0.0.0.0
+```
+
+Then open the local Vite URL (typically http://localhost:4173/demo.html) and test the extension on that page.
+
+For a production extension build, use:
+
+```bash
+npm run build
+```
+
 ## Privacy and security
 
 - No backend
