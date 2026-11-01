@@ -7,6 +7,7 @@
     "dev": "vite",
     "demo": "vite --host 0.0.0.0 --port 4173",
     "build": "tsc -b && vite build && node -e \"const fs=require('fs'); fs.copyFileSync('manifest.json', 'dist/manifest.json');\"",
+    "build:pages": "vite build --config vite.pages.config.ts && node -e \"const fs=require('fs'); fs.copyFileSync('pages-dist/demo.html', 'pages-dist/index.html');\"",
     "preview": "vite preview --host 0.0.0.0 --port 4173"
   },
   "dependencies": {

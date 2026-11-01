@@ -62,20 +62,26 @@ Then open Chrome and load the generated `dist` directory as an unpacked extensio
 
 ## Demo page
 
-A local demo page is included for testing the capture workflow without needing an external site.
+A live demo is published with GitHub Pages:
+
+**https://atim45.github.io/Argu/**
+
+The demo is a frontend preview; Chrome-extension capture features require installing the extension locally. A local development version is also available:
 
 ```bash
 npm install
-npm run demo -- --host 0.0.0.0
+npm run demo
 ```
 
-Then open the local Vite URL (typically http://localhost:4173/demo.html) and test the extension on that page.
+Open http://localhost:4173/demo.html to test the page locally.
 
 For a production extension build, use:
 
 ```bash
 npm run build
 ```
+
+The GitHub Pages site is deployed automatically when changes are pushed to `main`. To build the static site locally, run `npm run build:pages`.
 
 ## Privacy and security
 
